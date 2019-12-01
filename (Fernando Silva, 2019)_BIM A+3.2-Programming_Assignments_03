@@ -1,0 +1,30 @@
+import math
+
+# Get input from the user
+n = float(input("Enter the number of polygon points:"))
+
+x_list = []
+y_list = []
+
+print("Enter the X and Y coordinate for polygon points ")
+
+l = 1.0
+while l < (n+1):
+    x_list.append(int(input(f"x{l:<2.0f}: ")))
+    y_list.append(int(input(f"y{l:<2.0f}: ")))
+    l = l + 1
+
+print("-" * 20)
+
+print(f"{'Point':<8} {'x':<5} {'y':<3}")
+
+print("-" * 20)
+
+for p in range(0,int(n)):
+    print(f"{p+1:<6} {x_list[p]:<6.2f} {y_list[p]:<3.2f}")
+
+print("-" * 25)
+
+print("Geometric Characteristics")
+
+print("Sorry! I do not have enougth knowledge of programming to develop this step of assignment in this short time.")
